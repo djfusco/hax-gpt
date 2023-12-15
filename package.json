@@ -16,7 +16,10 @@
     "start": "web-dev-server"
   },
   "dependencies": {
-    "lit": "^2.0.2"
+    "@lrnwebcomponents/multiple-choice": "^7.0.18",
+    "lit": "^2.0.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.22.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
