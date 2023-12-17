@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@lrnwebcomponents/multiple-choice": "^7.0.18",
+    "dotenv": "^16.3.1",
     "lit": "^2.0.2",
     "node-fetch": "^3.3.2",
     "openai": "^4.22.0"

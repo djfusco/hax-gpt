@@ -1,4 +1,6 @@
 export default async function handler(req, res) {
+    const apiKey = process.env.CHAGPT_KEY;
+
     const search = req.query.search || '';
     const url = 'https://api.openai.com/v1/chat/completions';
     const data =
@@ -12,7 +14,7 @@ export default async function handler(req, res) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer KEY!!!',
+          'Authorization': 'Bearer ' + apiKey,
         },
         body: JSON.stringify(data)
       })
