@@ -71,12 +71,19 @@ export class HaxGPT extends LitElement {
     return html`
 
     <input type="text" style="width: 1300px; height: 140px;" id="topicTextBox">
+    <br>
+    <br>
+    <br>
     Write a refection statement about this topic.
+    <br>
+    <br>
     <input type="text" style="width: 1300px; height: 140px;" id="topicAnswer">
-
-
+    <br>
+    <br>
+    <br>
     <button id="myButton">Get Help</button>
-    <input type="text" style="width: 1300px; height: 140px;" id="myTextBox">
+    <br>
+    <textarea id="myTextBox" rows="20" cols="100" wrap="hard"></textarea>
     `;
   }
 
