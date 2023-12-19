@@ -1,6 +1,5 @@
 import { LitElement, html, css } from 'lit';
 import "@lrnwebcomponents/multiple-choice/multiple-choice.js";
-
 import { distance, closest } from 'fastest-levenshtein';
 
 
@@ -36,7 +35,8 @@ export class HaxGPT extends LitElement {
         .replace(/localhost:8(.*)/, "localhost:3000");
     }
     const topic = this.shadowRoot.querySelector('#topicTextBox').value;
-    return await fetch(`${base}/api/chatcall?search=${topic}`).then((r) => r.ok ? r.json() : []).then((data) => {
+    ////return await fetch(`${base}/api/chatcall?search=${topic}`).then((r) => r.ok ? r.json() : []).then((data) => {
+    return await fetch(`${base}/api/chatlib?search=${topic}`).then((r) => r.ok ? r.json() : []).then((data) => {
       return data;
     });
   }
